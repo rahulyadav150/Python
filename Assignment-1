@@ -72,9 +72,19 @@ Q16. Write a code that gives following as an output.
 iNeuroniNeuroniNeuroniNeuron
 ```
 
-Q17. Write a code to take a number as an input from the user and check if the number is odd or even.
+Ans- print('iNeuron'*3)
 
+
+Q17. Write a code to take a number as an input from the user and check if the number is odd or even.
+Ans-
+n  = int(input())
+if n%2==0:
+   print("even")
+else:
+   print("odd")
+   
 Q18. What are boolean operator?
+Ans- And,or and Not are boolean operators in python.
 
 Q19. What will the output of the following?
 ```
@@ -88,7 +98,8 @@ True and False and True - False
 ```
 
 Q20. What are conditional statements in Python?
-
+Ans- 
+Conditional Statement in Python perform different computations or actions depending on whether a specific Boolean constraint evaluates to true or false. Conditional statements are handled by IF statements in Python.
 Q21. What is use of 'if', 'elif' and 'else' keywords?
 Ans- If we want to perform some task on the basis of some condition then we use control structures. if,elif,else are the part of control structure.
 
