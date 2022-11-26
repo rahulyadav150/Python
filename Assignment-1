@@ -228,84 +228,145 @@ Q41. How can you create a tuple in Python?
 Q42. Create a tuple and try to add your name in the tuple. Are you able to do it? Support your answer with reason.
 Ans - No we can't add anything is tuple.becuase it is immutable.
 Q43. Can two tuple be appended. If yes, write a code for it. If not, why?
-
+ANS - we can create new tuple using two tuple.
+      t1 = (1,2)
+      t2 = (2,3)
+      t3 = t1 + t2
 Q44. Take a tuple as an input and print the count of elements in it.
-
+ Ans- t = input().split(",")
+      print(len(t))
 Q45. What are sets in Python?
-
+Ans- Sets in python are built in data structure which stores unique data.
 Q46. How can you create a set?
+Ans-  s = {1,3,5}
 
 Q47. Create a set and add "iNeuron" in your set.
-
+Ans = s = set()
+      s.add("iNeuron")
 Q48. Try to add multiple values using add() function.
+ans- No we can't add multiple values using add() function.
 
 Q49. How is update() different from add()?
-
+Ans- s = {1,2}
+     s.update([3,5,6])
 Q50. What is clear() in sets?
-
+Ans- clear() is used to delete all elemenst from set.
 Q51. What is frozen set?
-
+Ans- frozen set is a immutable set.Python frozenset() Method creates an immutable Set object from an iterable. It is a built-in Python function. As it is a set object therefore we cannot have duplicate values in the frozenset.
 Q52. How is frozen set different from set?
-
+Ans- set is mutable but frozen set is immutable.
 Q53. What is union() in sets? Explain via code.
-
+Ans- union combines the elements of two sets persisting the set property.
+      s1 = {1,3,5}
+      s2 = {2,4,6}
+      print(s1 | s2)
+      output = {1,2,3,4,5,6}
 Q54. What is intersection() in sets? Explain via code.
-
-Q55. What is dictionary ibn Python?
+Ans- s1 = {1,2,3,5}
+      s2 = {2,4,6}
+      print(s1 & s2)
+      output = {2}
+Q55. What is dictionary in Python?
+Ans - dictionary is builtin data structure in python which stores data in key value.
 
 Q56. How is dictionary different from all other data structures.
-
+Ans- Dictionary stores data in key-values form,all other data structures stores only values.
 Q57. How can we delare a dictionary in Python?
+Ans - d = dict()
 
 Q58. What will the output of the following?
 ```
 var = {}
 print(type(var))
 ```
-
+Ans- <class 'dict'>
 Q59. How can we add an element in a dictionary?
-
+Ans- d = {}
+     d['key'] = value
 Q60. Create a dictionary and access all the values in that dictionary.
-
+Ans = d = {1:"1",2:"rahul"}
+      for num in d.values():
+         print(num)
 Q61. Create a nested dictionary and access all the element in the inner dictionary.
-
+Ans = d = {1:1}
+      d1 = {'name':'rahul',"course":"python"}
+      d['nd'] = d1
+      d3  = d['nd']
+      for val in d3.values():
+         print(val)
 Q62. What is the use of get() function?
-
+Ans- d = {1:"rahul",2:'ankit'}
+      print(d.get(1))
+      output : rahul
 Q63. What is the use of items() function?
-
+ans- return a set of key,values pair objec which is iterable.
 Q64. What is the use of pop() function?
-
+Ans- pop() is used to remove items from dictioanary using key.
 Q65. What is the use of popitems() function?
-
+Ans- Python popitem() method removes an element from the dictionary. It removes arbitrary element and return its value. If the dictionary is empty, it returns an error KeyError.
 Q66. What is the use of keys() function?
-
+Ans- Return a set of keys of dictionary.
 Q67. What is the use of values() function?
-
+Ans- returns a set of values of dictionary.
 Q68. What are loops in Python?
+Ans- loops are used to perform repetitive tasks in python.
 
 Q69. How many type of loop are there in Python?
-
+Ans - two types
+      1) for loop
+      2) while loop
 Q70. What is the difference between for and while loops?
-
+Ans- we use for loop when we know the exact count of iteration,but while loop run untill the condition is true.
 Q71. What is the use of continue statement?
-
+Ans - continue is used to skip execution of statement in current iteration and move to next iteration.
 Q72. What is the use of break statement?
-
+Ans - Break is used to stopping the loop.
 Q73. What is the use of pass statement?
+Ans - pass is used to create an empty block,class,or function.
 
 Q74. What is the use of range() function?
-
+Ans- If you do need to iterate over a sequence of numbers, the built-in function range() comes in handy. It generates arithmetic progressions: 
+In Python, there is an easy way to achieve this by using range(x, y, step). It creates a sequence from x to y-1 with a difference of step between each value. 
 Q75. How can you loop over a dictionary?
-
+Ans = dict = {1:1,2:1,3:2}
+      for k,v in dict.items():
+         print(k,v)
 
 ### Coding problems
 Q76. Write a Python program to find the factorial of a given number.
-
+Ans- 
+   def fact(n):
+      if n==1
+         return 1
+      return n*fact(n-1)
+    
+    n = input()
+    print(fact(n)
+      
 Q77. Write a Python program to calculate the simple interest. Formula to calculate simple interest is SI = (P*R*T)/100
+ans =  p = int(input())
+       r = int(intput())
+       t = int(input())
+       print((p*r*t)/100)
 
 Q78. Write a Python program to calculate the compound interest. Formula of compound interest is A = P(1+ R/100)^t.
-
+Ans-  p = int(input())
+       r = int(intput())
+       t = int(input())
+       print((p*r*t)/100)
+       A = P*(1+R/100)**t
+       print(A)
+  
 Q79. Write a Python program to check if a number is prime or not.
+Ans - n = int(input())
+      for i in range(2,n/2+1):
+         if(n%i==0):
+            print("Not a prime")
+            retrun None
+      print("Prime")
+      return None;
+     
+      
 
 Q80. Write a Python program to check Armstrong Number.
 
@@ -328,26 +389,41 @@ Q88. Write a Python program to check if a substring is present in a given string
 Q89. Write a Python program to find words which are greater than given length k.
 
 Q90. Write a Python program to extract unquire dictionary values.
-
+Ans-> dict = {1:2,2:2,3:3,4:1}
+      s = set()
+      for i in dict.values():
+         s.add(i)
+       print(s)
+       
 Q91. Write a Python program to merge two dictionary.
+Ans- dict1 = {1:2,2:1,3:1}
+     dict2 = {5:2,6:2}
+     print(dict1.update(dict2))
+     
 
 Q92. Write a Python program to convert a list of tuples into dictionary.
 ```
 Input : [('Sachin', 10), ('MSD', 7), ('Kohli', 18), ('Rohit', 45)]
 Output : {'Sachin': 10, 'MSD': 7, 'Kohli': 18, 'Rohit': 45}
 ```
-
+Ans-input : [('Sachin', 10), ('MSD', 7), ('Kohli', 18), ('Rohit', 45)] 
+   d = dict(input)
 Q93. Write a Python program to create a list of tuples from given list having number and its cube in each tuple.
 ```
 Input: list = [9, 5, 6]
 Output: [(9, 729), (5, 125), (6, 216)]
-```
 
+```
+Ans- list = [9, 5, 6]
+   l = [(x,x**3 )for x in list]
 Q94. Write a Python program to get all combinations of 2 tuples.
 ```
 Input : test_tuple1 = (7, 2), test_tuple2 = (7, 8)
 Output : [(7, 7), (7, 8), (2, 7), (2, 8), (7, 7), (7, 2), (8, 7), (8, 2)]
 ```
+Ans-
+result =  [(x, y) for x in tuple1 for y in tuple2]
+result = result +  [(x, y) for x in tuple2 for y in tuple1]
 
 Q95. Write a Python program to sort a list of tuples by second item.
 ```
