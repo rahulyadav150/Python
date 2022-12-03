@@ -1,0 +1,135 @@
+## Python OOP Assignment
+Q1. What is the purpose of Python's OOP?
+Ans- In real world every thing is treated  as a object,to solve real world problem we need to think in terms of object,so for these purpose we use object oriented programing.
+
+Q2. Where does an inheritance search look for an attribute?
+Ans- An inheritance search looks for an attribute first in the instance object, then in the class the instance was created from, then in all higher superclasses, progressing from left to right (by default). The search stops at the first place the attribute is found.
+
+Q3. How do you distinguish between a class object and an instance object?
+Classes are a kind of factory for creating multiple instances. Classes also support operator overloading methods, which instances inherit, and treat any functions nested in the class as methods for processing instances.
+
+Q4. What makes the first argument in a class’s method function special?
+Ans-It always receives the instance object that is the implied subject of the method call. It’s usually called 'self' by convention.
+
+Q5. What is the purpose of the init method?
+Ans- If the __init__ method is coded or inherited in a class, Python calls it automatically each time an instance of that class is created.
+class New():
+def __init__(self, arg1, arg2):
+self.first_var = arg1
+self.second_var = arg2
+
+Q6. What is the process for creating a class instance?
+Ans - 
+  Class A:
+    pass
+  obj = A()
+Q7. What is the process for creating a class?
+Ans- 
+  Class A:
+    pass
+   
+Q8. How would you define the superclasses of a class?
+Ans-They are classes which are used to inherit from.
+
+class Son(Father, Mother): ...
+
+In this case Father and Mother are superclasses for Son subclass.
+
+Q9. What is the relationship between classes and modules?
+Ans- 
+  Modules are the way of organizing of classes,function etc,while classes are blueprint for a creation of object.
+
+Q10. How do you make instances and classes?
+Ans-
+  class A:
+    pass
+   ins = A()
+Q11. Where and how should be class attributes created?
+Ans- 
+Class attributes are created outside of all methods inside class.
+class A:
+  temp = 'rahul' //class attribute
+
+Q12. Where and how are instance attributes created?
+Ans- instance attribute can be created anywhere,using instance.
+
+obj = A()
+obj.temp = 'ddg'
+Q13. What does the term "self" in a Python class mean?
+Ans- it does'nt have any special mean,neither it is reserved,it is same as another variables.
+
+Q14. How does a Python class handle operator overloading?
+Ans- There are some special methods for operator overloading,such as __add__(self,other), __gt__(self,other) etc.we define these methods in our class for achieving overloading behaviour.
+
+Q15. When do you consider allowing operator overloading of your classes?
+
+Q16. What is the most popular form of operator overloading?
+Ans- 
+  Addition is most popular form of opearator overloading.in python we can overload this by defining __add__().
+Q17. What are the two most important concepts to grasp in order to comprehend Python OOP code?
+Ans- Polymorphishm and inheritance.
+
+Q18. Describe three applications for exception processing.
+Ans- 
+  continue execution even after exception,it helps in abnormarl disruption of our program.programmer can define behaviour of their program in case of exception
+
+Q19. What happens if you don't do something extra to treat an exception?
+Ans- if don't handle exception then our program stops abnormaly.
+
+Q20. What are your options for recovering from an exception in your script?
+Ans- 
+  we can recover from exception by handling then using try except block.
+Q21. Describe two methods for triggering exceptions in your script.
+Ans-
+ We can trigger exception using raise and assert.
+Q22. Identify two methods for specifying actions to be executed at termination time, regardless of  
+whether or not an exception exists.
+Ans- finally
+
+Q23. What is the purpose of the try statement?
+Ans- try is keyword used to define a block inside which if error occured,transferred to except block.
+Q24. What are the two most popular try statement variations?
+Ans- 
+Try/Except/Else
+Try/Except/finally
+Q25. What is the purpose of the raise statement?
+Ans- raise is used to manually raising the exception.
+Q26. What does the assert statement do, and what other statement is it like?
+Ans- assert check for condition and raise assertionerror if condition returns false.
+Q27. What is the purpose of the with/as argument, and what other statement is it like?
+Ans- with defines a scope,it can be used if file handling for automatically closing a file outside the scope.
+Q28. What are *args, **kwargs?
+Ans- *args,**kwargs define arbitrary number of arguments,*args take a list of parameter,**kwargs takes a dictionary of parameters.
+
+Q29. How can I pass optional or keyword parameters from one function to another?
+Ans- for defining argument as optional we define a default value in definition itself.
+     for passing keyword argument we use the name of arguments at the time of calling.
+Q30. What are Lambda Functions?
+ans- lambda function are anonymous functions which evaluates a single expression.
+  a = lambda x: x+2
+  
+Q31. Explain Inheritance in Python with an example?
+Ans-Inheritance allows us to define a class that inherits all the methods and properties from another class.
+
+Parent class is the class being inherited from, also called base class.
+
+Child class is the class that inherits from another class, also called derived class.
+
+class p:
+  def __init__(self):
+    self.a = "rahul"
+class b(p):
+  def __init__(self):
+    super.__init__(self):
+      print(self.a)
+ obj = b()
+ output - rahul
+Q32. Suppose class C inherits from classes A and B as class C(A,B).Classes A and B both have their own versions of method func(). If we call func() from an object of 
+class C, which version gets invoked?
+Ans -  func() wil be invoked from A.
+Q33. Which methods/functions do we use to determine the type of instance and inheritance?
+Ans- isinstance(),issubclass().
+Q34.Explain the use of the 'nonlocal' keyword in Python.
+Ans- nonlocal is used to for refering upper scope.
+
+Q35. What is the global keyword?
